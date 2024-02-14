@@ -34,7 +34,7 @@ window.onload = function() {
         noButton.style.top = randomY + 'px';
     });
 
-    yesButton.addEventListener('click', function() {
+    yesButton.addEventListener('click', function(e) {
         one.style.display = 'none'
         two.style.display = 'flex';
         two.style.fontSize = '0.7em';
