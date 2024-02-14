@@ -1,0 +1,115 @@
+*,
+*:after,
+*:before {
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    position: relative;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://i.pinimg.com/originals/ae/cc/4f/aecc4fa33ba0f5b77412639b366c7e58.jpg");
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+img{
+    border-radius: 1rem;
+}
+
+#box {
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+#box button {
+    margin: 1.5rem 1rem 0 1rem;
+    font-size: 1.25em;
+    color: white;
+    font-family: "Comic Sans MS", cursive;
+    padding: 0.75rem;
+    width: 7rem;
+    border: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.25s;
+} #yes{
+    background-color: hsl(120, 100%, 25%);
+} #no{
+    background-color: hsl(0, 100%, 50%);
+} #yes:hover{
+    background-color: hsl(120, 100%, 15%);
+} #no:hover{
+    background-color: hsl(0, 100%, 40%);
+} #box #two #next{
+    color: black;
+    background-color: lightgray;
+} #box #two #next:hover{
+    background-color: hsl(0, 0%, 73%);
+}
+
+#one{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#two{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+#three{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#card {
+    position: absolute;
+    top: 50%;
+    /* top: -100%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 1s;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+video {
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+}
